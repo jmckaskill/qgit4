@@ -37,7 +37,7 @@ const QString Git::getLocalDate(SCRef gitDate) {
 
 	QDateTime d;
 	d.setTime_t(gitDate.toULong());
-	localDate = d.toString(Qt::LocalDate);
+        localDate = d.toString(Qt::ISODate);
 	localDates[gitDate] = localDate;
 	return localDate;
 }
