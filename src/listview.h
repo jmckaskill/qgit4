@@ -52,9 +52,11 @@ protected:
 	virtual void mousePressEvent(QMouseEvent* e);
 	virtual void mouseMoveEvent(QMouseEvent* e);
 	virtual void mouseReleaseEvent(QMouseEvent* e);
+    /*
 	virtual void dragEnterEvent(QDragEnterEvent* e);
 	virtual void dragMoveEvent(QDragMoveEvent* e);
 	virtual void dropEvent(QDropEvent* e);
+    */
 
 private slots:
 	void on_customContextMenuRequested(const QPoint&);

@@ -319,6 +319,7 @@ void ListView::mouseMoveEvent(QMouseEvent* e) {
 	QTreeView::mouseMoveEvent(e);
 }
 
+/*
 void ListView::dragEnterEvent(QDragEnterEvent* e) {
 
 	if (e->mimeData()->hasFormat("text/plain"))
@@ -332,7 +333,6 @@ void ListView::dragMoveEvent(QDragMoveEvent* e) {
 }
 
 void ListView::dropEvent(QDropEvent *e) {
-
 	SCList remoteRevs(e->mimeData()->text().split('\n', QString::SkipEmptyParts));
 	if (!remoteRevs.isEmpty()) {
 		// some sanity check on dropped data
@@ -342,6 +342,7 @@ void ListView::dropEvent(QDropEvent *e) {
 			emit revisionsDropped(remoteRevs);
 	}
 }
+*/
 
 void ListView::on_customContextMenuRequested(const QPoint& pos) {
 
